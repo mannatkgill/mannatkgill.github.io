@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Friends</title>
 </head>
 <body>
-    
+        <div class="container" id="begContainer">
+        <h1 id="display">will you be my bestie?</h1>
+        <img src="heart_bear_gif.gif" class="gif" id="image"></img>
+        <button type="button" class="yesbutton" onclick="besties()" id="yesBut">Yes </button> 
+        <button type="button" class="nobutton" id="noBut">No </button> 
+        </div>
+        <div class="yesContainer" id="yesContainer">
+            <h1 id="yesText"></h1>
+            <img src="" class="gif" id="yesImage"></img>
+        </div>
+        <script>
+            function besties(){
+                var containerElements = document.getElementById("begContainer"); 
+                containerElements.innerHTML=""; 
+                var newImage = document.getElementById("yesImage"); 
+                newImage.src="dancinggif.gif"; 
+                var newContainer = document.getElementById("yesContainer"); 
+                newContainer.append(newImage); 
+                
+                
+
+                return; 
+            }
+        </script> 
 </body>
 </html>
+<!--var yesText = document.getElementById("yesText");
+                yesText = "YAYYY"; 
+                newContainer.append(yesText); --> 
